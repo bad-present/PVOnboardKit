@@ -3,6 +3,6 @@ language: objective-c
 
 script: 
     - pod --project-directory=Examples/PVOnboardKitExample/ install
-    - xcodebuild -workspace Examples/PVOnboardKitExample/PVOnboardKitExample.xcworkspace -sdk iphonesimulator -scheme PVOnboardKitExample build
+    - xcodebuild -workspace Examples/PVOnboardKitExample/PVOnboardKitExample.xcworkspace -sdk iphonesimulator -scheme PVOnboardKitExample build | xcpretty -s
     - pod --project-directory=Examples/PVOnboardKitSwiftExample/ install
-    - xcodebuild -workspace Examples/PVOnboardKitSwiftExample/PVOnboardKitSwiftExample.xcworkspace -sdk iphonesimulator -scheme PVOnboardKitSwiftExample build
+    - xcodebuild -workspace Examples/PVOnboardKitSwiftExample/PVOnboardKitSwiftExample.xcworkspace -sdk iphonesimulator -scheme PVOnboardKitSwiftExample build | xcpretty -s
